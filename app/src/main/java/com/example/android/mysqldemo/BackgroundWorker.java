@@ -49,7 +49,7 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
                 bufferedWriter.write(post_data);
                 bufferedWriter.flush();
                 bufferedWriter.close();
-                outputStream.close();
+                outputStream.close(); //
                 InputStream inputStream = httpURLConnection.getInputStream();
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream,"iso-8859-1"));
                 String result="";

@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
         BackgroundWorker backgroundWorker = new BackgroundWorker(this);
         backgroundWorker.execute(type, username, password);
+
+        //change
     }
 
 }
