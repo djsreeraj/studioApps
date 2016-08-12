@@ -46,4 +46,14 @@
         android:layout_marginLeft="51dp"
         android:layout_marginStart="51dp"
         android:onClick="OnLogin"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLEAR"
+        android:id="@+id/B2"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/btnLogin"
+        android:layout_alignStart="@+id/btnLogin"
+        android:onClick="onClear"/>/>
 </RelativeLayout>

@@ -12,7 +12,7 @@ import android.view.MenuItem;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-    EditText usernameEt,passwordEt;
+    EditText usernameEt, passwordEt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         passwordEt = (EditText) findViewById(R.id.etPassword);
     }
 
-    public void OnLogin(View view){
+    public void OnLogin(View view) {
         String username = usernameEt.getText().toString();
         String password = passwordEt.getText().toString();
         String type = "login";
@@ -34,4 +34,9 @@ public class MainActivity extends AppCompatActivity {
         //change
     }
 
+    public void onClear(View view) {
+         usernameEt.setText("");
+         passwordEt.setText("");
+    }
 }
+
